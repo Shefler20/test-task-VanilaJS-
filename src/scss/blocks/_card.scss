@@ -1,0 +1,91 @@
+
+.card {
+  border: 1px solid var(--gray-300);
+  border-radius: 4px;
+  box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
+  background: var(--white);
+
+  &__img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__tag {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 0 8px;
+    margin: 0 0 21px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--white);
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--gray-900);
+    margin-bottom: 20px;
+  }
+
+  &__price {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--danger);
+    margin-right: 5px;
+  }
+
+  &__author {
+    position: relative;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    padding-left: 8px;
+    color: var(--gray-700);
+  }
+
+  &__author::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 15px;
+    background: var(--gray-700);
+  }
+
+  &__body {
+    padding: 24px;
+  }
+}
+
+.card__tag--marketing {
+  background: var(--success);
+
+}
+
+.card__tag--management {
+  background: var(--info);
+
+}
+
+.card__tag--design {
+  background: #f52f6e;
+
+}
+
+.card__tag--development {
+  background: #7772f1;
+
+}
+
+.card__tag--hr-recruiting,
+.card__tag--hr {
+  background: var(--warning);
+}
